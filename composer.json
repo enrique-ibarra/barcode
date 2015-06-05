@@ -1,7 +1,7 @@
 {
     "name": "enrique-ibarra/barcode",
     "description": "Barcode Generator for PHP (fork from emberlabs/barcode)",
-    "type": "component",
+    "type": "library",
     "keywords": ["barcode", "generator", "code39", "code128"],
     "homepage": "https://github.com/enrique-ibarra/barcode",
     "license": "MIT",
@@ -24,5 +24,29 @@
     },
     "extra": {
         "installer-name": "barcode"
+    },
+    "repositories": [
+      {
+          "type": "package",
+          "package": {
+              "name": "enrique-ibarra/barcode",
+              "version": "master",
+              "source": {
+                  "url": "git://github.com/enrique-ibarra/barcode.git",
+                  "type": "git",
+                  "reference": "master"
+              },
+              "autoload": {
+                  "classmap": [
+                      "."
+                  ]
+              }
+          }
+      }
+    ],
+    "autoload": {
+        "classmap": [
+            "."
+        ]
     }
 }
